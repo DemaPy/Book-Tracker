@@ -1,23 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import PostList from "./components/PostsList.vue";
-
-interface Post {
-  id: number;
-  title: string;
-  body: string;
-  userId: number;
-}
-
-const posts = ref<Post[]>([]);
-fetch("https://jsonplaceholder.typicode.com/posts")
-  .then((response) => response.json())
-  .then((json) => (posts.value = json));
 </script>
-
-<template>
-  <PostList :posts="posts" />
-</template>
+<template></template>
 
 <style scoped>
 .logo {
